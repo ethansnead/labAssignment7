@@ -4,7 +4,7 @@ int search(int numbers[], int low, int high, int value)
 {
 	if (high >= low){
 		int n = low + (high - low)/2;
-		if (numbers[m] == value)
+		if (numbers[n] == value)
 			return n;
 		if (numbers[n] > value)
 			return search (numbers, low, n-1, value);
